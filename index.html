@@ -16,7 +16,20 @@
 
     <div id="appVue">
         <div class="container">
-    
+            <div class="col-12 py-5">
+                <button type="button"
+                        class="btn btn-success"
+                        @click="generateEmail">
+                            Genera 10 email
+                </button>
+            </div>
+            <div class="col-12">
+                <ul>
+                    <li v-for="email in emailListRendered">
+                        {{ email }}
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
